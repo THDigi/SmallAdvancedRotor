@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+
+    <Definition xsi:type="MyObjectBuilder_MotorStatorDefinition">
+      <Id>
+        <TypeId>MotorAdvancedStator</TypeId>
+        <SubtypeId>SmallerAdvancedStator</SubtypeId>
+      </Id>
+      <Public>true</Public>
+      <DisplayName>Small Advanced Rotor</DisplayName>
+      <Icon>Textures\Icons\SmallAdvancedRotor.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\SmallAdvancedStator.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SmallTube" Count="1" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\SmallAdvancedStatorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\SmallAdvancedStatorConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>SmallAdvancedStator</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <PrimarySound>BlockRotorSmall</PrimarySound>
+      <RequiredPowerInput>0.0002</RequiredPowerInput>
+      <MaxForceMagnitude>448000</MaxForceMagnitude>
+      <RotorPart>SmallAdvancedRotor</RotorPart>
+      <RotorDisplacementMin>-0.11</RotorDisplacementMin>
+      <RotorDisplacementMax>0.11</RotorDisplacementMax>
+      <RotorDisplacementInModel>0</RotorDisplacementInModel>
+    </Definition>
+
+    <Definition>
+      <Id>
+        <TypeId>MotorAdvancedRotor</TypeId>
+        <SubtypeId>SmallerAdvancedRotor</SubtypeId>
+      </Id>
+      <DisplayName>Small Advanced Rotor Top</DisplayName>
+      <Icon>Textures\Icons\SmallAdvancedRotor.dds</Icon>
+      <Public>false</Public>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\SmallAdvancedRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="SmallTube" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\SmallAdvancedRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\SmallAdvancedRotorConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>SmallAdvancedRotor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>2</BuildTimeSeconds>
+    </Definition>
+
+  </CubeBlocks>
+</Definitions>
