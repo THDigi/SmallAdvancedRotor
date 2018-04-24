@@ -6,10 +6,10 @@
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId/>
       </Id>
-      <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
       <Name>SmallBlocks</Name>
       <ItemIds>
         <string>MotorAdvancedStator/SmallerAdvancedStator</string>
+        <string>MotorAdvancedRotor/SmallerAdvancedRotor</string>
       </ItemIds>
     </Category>
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -17,10 +17,10 @@
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId/>
       </Id>
-      <DisplayName>DisplayName_Category_ConveyorBlocks</DisplayName>
       <Name>Conveyors</Name>
       <ItemIds>
         <string>MotorAdvancedStator/SmallerAdvancedStator</string>
+        <string>MotorAdvancedRotor/SmallerAdvancedRotor</string>
       </ItemIds>
     </Category>
   </CategoryClasses>

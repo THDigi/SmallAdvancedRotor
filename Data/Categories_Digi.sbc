@@ -2,7 +2,7 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CategoryClasses>
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
-	<Id>
+      <Id>
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId/>
       </Id>
@@ -10,6 +10,7 @@
       <Name>z-mod-digi</Name>
       <ItemIds>
         <string>SmallerAdvancedStator</string>
+        <string>SmallerAdvancedRotor</string>
       </ItemIds>
     </Category>
   </CategoryClasses>
