@@ -26,7 +26,11 @@
       </Components>
       <CriticalComponent Subtype="Motor" Index="0" />
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Left" StartX="0.25" StartY="0" EndX="0.75" EndY="0.61" />
+        <MountPoint Side="Right" StartX="0.25" StartY="0" EndX="0.75" EndY="0.61" />
+        <MountPoint Side="Front" StartX="0.25" StartY="0" EndX="0.75" EndY="0.61" />
+        <MountPoint Side="Back" StartX="0.25" StartY="0" EndX="0.75" EndY="0.61" />
       </MountPoints>
       <IsAirTight>false</IsAirTight>
       <BuildProgressModels>
@@ -76,7 +80,7 @@
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <MountPoints>
-        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
       </MountPoints>
       <IsAirTight>false</IsAirTight>
       <BuildProgressModels>
