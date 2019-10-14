@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CubeBlocks>
-
     <Definition xsi:type="MyObjectBuilder_MotorStatorDefinition">
       <Id>
         <TypeId>MotorAdvancedStator</TypeId>
         <SubtypeId>SmallerAdvancedStator</SubtypeId>
       </Id>
+      <PCU>100</PCU>
       <BlockPairName>SmallAdvancedStator</BlockPairName>
       <DisplayName>Small Advanced Rotor</DisplayName>
       <Icon>Textures\Icons\Stator.dds</Icon>
@@ -28,6 +28,7 @@
       <MountPoints>
         <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
       </MountPoints>
+      <IsAirTight>false</IsAirTight>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\MotorStatorConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\MotorStatorConstruction_2.mwm" />
@@ -38,7 +39,8 @@
       <RotorPart>SmallAdvancedRotor</RotorPart>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <RequiredPowerInput>0.0002</RequiredPowerInput>
-      <MaxForceMagnitude>448000</MaxForceMagnitude>
+      <MaxForceMagnitude>1E6</MaxForceMagnitude>
+      <DangerousTorqueThreshold>448000</DangerousTorqueThreshold>
       <RotorDisplacementMin>-0.11</RotorDisplacementMin> <!-- rotor displacement for largeship top part -->
       <RotorDisplacementMax>0.11</RotorDisplacementMax>
       <RotorDisplacementMinSmall>-0.11</RotorDisplacementMinSmall> <!-- rotor displacement for smallship top part -->
@@ -58,6 +60,7 @@
         <TypeId>MotorAdvancedRotor</TypeId>
         <SubtypeId>SmallerAdvancedRotor</SubtypeId>
       </Id>
+      <PCU>1</PCU>
       <BlockPairName>SmallAdvancedRotor</BlockPairName>
       <DisplayName>Small Advanced Rotor Top</DisplayName>
       <Icon>Textures\Icons\Rotor.dds</Icon>
@@ -75,6 +78,7 @@
       <MountPoints>
         <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
       </MountPoints>
+      <IsAirTight>false</IsAirTight>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\MotorRotorConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\MotorRotorConstruction_2.mwm" />
@@ -83,6 +87,5 @@
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
     </Definition>
-
   </CubeBlocks>
 </Definitions>
